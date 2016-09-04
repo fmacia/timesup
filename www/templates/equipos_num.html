@@ -1,0 +1,25 @@
+<ion-view view-title="Time's Up!" cache-view="false">
+
+	<ion-nav-bar align-title="center" class="bar bar-header bar-stable" >
+	</ion-nav-bar>
+
+	<ion-content>
+		<div class="row">
+			<div class="col text-center">
+				<div class="item item-input">
+  				<span class="input-label">¿Cuántos equipos jugarán?</span>
+  					<ionic-numberpicker input-obj="numberPickerObject">
+				      <button class="button button-positive order-button">
+				        Cambiar
+				      </button>
+  					</ionic-numberpicker>
+				</div>
+				{{ datos.equipos_num }}
+				<a class="button button-positive" href="#/equipos_nombre">
+					OK
+				</a>
+			</div>
+		</div>
+	</ion-content>
+
+</ion-view>

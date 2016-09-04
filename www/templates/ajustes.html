@@ -1,0 +1,68 @@
+<ion-view view-title="Time's Up!" cache-view="false">
+
+	<ion-nav-bar align-title="center" class="bar bar-header bar-stable" >
+	</ion-nav-bar>
+
+	<ion-content>
+		<div class="row">
+			<div class="col text-center">
+				<h1>Ajustes</h1>
+				<a class="button button-positive" href="#/mazos">
+					Gestionar cartas
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col text-center">
+				<label class="item item-input">
+	  			<span class="input-label">Total de cartas</span>
+	  			<input type="number" ng-model="datos.total_cartas">
+				</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col text-center">
+				<label class="item item-input">
+	  			<span class="input-label">Tiempo</span>
+	  			<input type="number" ng-model="datos.tiempo">
+				</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col text-center">
+				<ion-toggle ion-toggle-text="Sí;No" toggle-class="toggle-positive" ng-model="datos.pasar">
+    			Permitir pasar
+  			</ion-toggle>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col text-center">
+				<ion-toggle ion-toggle-text="Sí;No" toggle-class="toggle-positive" ng-model="datos.ver_puntos">
+    			Ver puntos actuales
+  			</ion-toggle>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col text-center">
+				<ion-toggle ion-toggle-text="Sí;No" toggle-class="toggle-positive" ng-model="datos.ver_restantes">
+    			Ver restantes
+  			</ion-toggle>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col text-center">
+				<ion-toggle ion-toggle-text="Sí;No" toggle-class="toggle-positive" ng-model="datos.ver_descripciones">
+    			Ver descripciones
+  			</ion-toggle>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col text-center">
+				<button class="button button-positive">
+					Acerca de
+				</button>
+			</div>
+		</div>
+	</ion-content>
+
+</ion-view>

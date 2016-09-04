@@ -1,0 +1,19 @@
+<ion-view view-title="Time's Up!" cache-view="false">
+
+	<ion-nav-bar align-title="center" class="bar bar-header bar-stable" >
+	</ion-nav-bar>
+
+	<ion-content>
+		<div class="row">
+			<div class="col text-center">
+				<h1>Ronda {{ datos.ronda }}</h1>
+				<h1>{{ datos.equipos[datos.turno_actual].nombre }}</h1>
+				<h1>Puntos: {{ datos.equipos[datos.turno_actual].puntos[datos.ronda] }}</h1>
+				<a class="button button-positive" href="#/turno">
+					Comenzar
+				</a>
+			</div>
+		</div>
+	</ion-content>
+
+</ion-view>

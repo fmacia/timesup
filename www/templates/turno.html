@@ -1,0 +1,22 @@
+<ion-view view-title="Time's Up!" cache-view="false">
+
+	<ion-nav-bar align-title="center" class="bar bar-header bar-stable" >
+	</ion-nav-bar>
+
+	<ion-content>
+		<div class="row">
+			<div class="col text-center">
+				<h1>Tiempo: {{ tiempo }}</h1>
+				<h1>{{ datos.cartas[datos.total_cartas - datos.restantes] }}</h1>
+				<button class="button button-positive" ng-click="pasar()">
+					<i class="icon ion-close-round"></i>
+				</button>
+				<button class="button button-positive" ng-click="acertar()">
+					<i class="icon ion-checkmark-round"></i>
+				</button>
+				<h1>Restantes: {{ datos.restantes }}</h1>
+			</div>
+		</div>
+	</ion-content>
+
+</ion-view>

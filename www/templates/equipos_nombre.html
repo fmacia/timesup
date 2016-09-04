@@ -1,0 +1,27 @@
+<ion-view view-title="Time's Up!" cache-view="false">
+
+	<ion-nav-bar align-title="center" class="bar bar-header bar-stable" >
+	</ion-nav-bar>
+
+	<ion-content>
+		<div class="row">
+			<div class="col text-center">
+				<form name="equipos_nombre_form">
+					Cantidad de equipos: {{ datos.equipos_num }}
+
+					<div ng-repeat="(clave, equipo) in datos.equipos">
+						<label class="item item-input">
+  						<span class="input-label">Nombre del equipo {{ clave + 1 }}</span>
+  						<input type="text" ng-model="datos.equipos[clave].nombre" required>
+						</label>
+					</div>
+
+					<a class="button button-positive" href="#/turno_empezar" ng-if="equipos_nombre_form.$valid">
+						OK
+					</a>
+				</form>
+			</div>
+		</div>
+	</ion-content>
+
+</ion-view>

@@ -1,0 +1,21 @@
+<ion-view view-title="Time's Up!" cache-view="false">
+
+	<ion-nav-bar align-title="center" class="bar bar-header bar-stable" >
+	</ion-nav-bar>
+
+	<ion-content>
+		<div class="row">
+			<div class="col text-center">
+				<h1>Fin de la ronda {{ datos.ronda - 1 }}</h1>
+				<h1 ng-repeat="(clave, equipo) in datos.equipos">
+					{{ equipo.nombre }}: {{ equipo.puntos[datos.ronda - 1] }} puntos
+				</h1>
+			</div>
+			<!-- TODO: Poner totales! No solo los puntos de cada ronda -->
+			<a class="button button-positive" href="#/{{ siguiente_pantalla }}">
+				Siguiente turno
+			</a>
+		</div>
+	</ion-content>
+
+</ion-view>
